@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Shaz/autoXl app</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --APP DOWNLOAD PAGE-- -->
+
+    <section id="app-download">
+      <div class="container-lg mt-5">
+        <div
+          class="row justify-content-center align-items-center pb-5 row-gap-4"
+        >
+          <a
+            href="index.html"
+            class="text-decoration-none text-info-emphasis fw-bold mb-3"
+          >
+            <i class="bi bi-arrow-left-circle fs-2 me-2"></i>Home
+          </a>
+          <div class="col-lg-5 text-start">
+            <h3 class="text-white">Auto XL</h3>
+            <p class="text-white lead fw-normal">
+              AutoXL is an application which helps excel users to extract datas
+              from an existing sheet or multiple sheets and create a new sheet
+              using those extracted datas.
+            </p>
+            <div
+              class="bg-dark rounded p-4 text-white overflow-y-scroll"
+              style="height: 250px"
+            >
+              <h5 class="text-white text-decoration-underline">
+                Working Method
+              </h5>
+
+              <p>
+                <span class="fw-semibold text-info">Add Files - </span> You can
+                select your files by clicking the Browse File or Browse Folder
+                options. There is an option to clear all the selected files if
+                you want.
+              </p>
+              <p>
+                <span class="fw-semibold text-info">Add Headers - </span>
+                After selecting the sheets add your headings if necessary then
+                click add headers button. This will add your headings to your
+                new sheet.
+              </p>
+
+              <p>
+                <span class="fw-semibold text-info">Add Cells - </span> Here you
+                can type your cells name of datas which you wanted to extract.
+                After submitting you can see the entered cell names below. If
+                you want to clear the cells you can use clear button
+              </p>
+
+              <p>
+                <span class="fw-semibold text-info">Extract Datas -</span> Now
+                the extract button will be enabled to extract and create new
+                sheet. so click the button and save your new extracted sheet.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div
+              id="carouselRide"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselRide"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselRide"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselRide"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselRide"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="Screenshot (1).png"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Screenshot (2).png"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="Screenshot (3).png"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Screenshot (4).png"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselRide"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselRide"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+              <a
+                href="AutoXl.exe"
+                class="btn btn-success btn-lg fw-bold px-5"
+                download=""
+                >Get App <i class="ps-2 bi bi-download"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
