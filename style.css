@@ -40,15 +40,61 @@ nav span{
 
 
 /* --about section-- */
-.about-image{
-    transition: transform .5s;
-}
-.about-image:hover{
-    transform: scale(1.1);
-    opacity: 0.8;
-    
+
+.about-img{
+    position: relative;
+    transform: 0.5s;
 }
 
+.about-img::before{
+    position: absolute;
+    content: '';
+    right: -40px;
+    bottom: -40px;
+    background: #0dcaf0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.about-img img {
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.about-img img:hover{
+    transform: scale(1.1);
+}
+
+/* --Technologies section-- */
+.sec-blue{
+    border-top: 5px #0dcaf0 solid;
+    border-radius: 30%;
+    transition: transform 0.9s,border 0.5s;
+    border-bottom: 5px transparent dashed;
+}
+
+.sec-white{
+    border-bottom: 5px #fff solid;
+    border-radius: 30%;
+    transition: transform 0.9s,border 0.5s;
+}
+.sec-blue:hover{
+    border-bottom: 5px #0dcaf0 solid;
+    border-left: 5px #0dcaf0 dashed;
+    border-right: 15px #0dcaf0 dashed;
+    border-radius: 30px;
+    transform: translateY(-10px);
+    
+}
+.sec-white:hover{
+    border-top: 5px #fff solid;
+    border-left: 15px #fff dashed;
+    border-right: 5px #fff dashed;
+    border-radius: 30px;
+    transform: translateY(10px);
+}    
 
 /* --services section-- */
 .service-main-div{
@@ -170,7 +216,15 @@ nav span{
         height: 100%;
     }
 
-    .about-image {
+    .about-img::before {
         width:100% ;
+        border: none;
+    }
+
+    .sec-blue{
+        border: none
+    }
+    .sec-white{
+        border: none;
     }
 }
