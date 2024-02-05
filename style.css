@@ -223,8 +223,18 @@ nav span{
 
     .sec-blue{
         border: none
+        
     }
     .sec-white{
         border: none;
     }
+
+    .sec-blue:hover{
+        border: none;
+        
+    }
+    .sec-white:hover{
+        border: none;
+    
+    }  
 }
